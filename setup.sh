@@ -22,6 +22,8 @@ logtimestamps=1
 testnet=1
 EOF
 
+zen-fetch-params
+
 zend
 
 // execute zen commands:
