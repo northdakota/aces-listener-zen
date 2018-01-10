@@ -59,7 +59,7 @@ public class ZenService {
             log.info("getting raw transaction for transactionId = " + transactionId);
             HttpEntity<String> transactionRequestEntity = getRequestEntity(
                     "getrawtransaction",
-                    Arrays.asList(transactionId, true)
+                    Arrays.asList(transactionId)
             );
             try {
                 JsonNode transaction = zenRpcRestTemplate
