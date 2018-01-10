@@ -24,6 +24,6 @@ EOF
 
 zend
 
-// execute bitcoin commands:
+// execute zen commands:
 zen-cli getblockcount
 zen-cli listtransactions
