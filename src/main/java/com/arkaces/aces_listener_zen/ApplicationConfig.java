@@ -22,7 +22,7 @@ public class ApplicationConfig {
     @Bean
     public RestTemplate zenRpcRestTemplate(ZenRpcSettings zenRpcSettings) {
         return new RestTemplateBuilder()
-            .rootUri("http://localhost:8231/")
+            .rootUri("http://localhost:18231/")
             .basicAuthorization(zenRpcSettings.getUsername(), zenRpcSettings.getPassword())
             .build();
     }
