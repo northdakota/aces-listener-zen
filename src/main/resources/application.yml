@@ -17,7 +17,7 @@ arkAuth:
   requireAuth: false
 
   # Ark Network to use for fetching and broadcasting ark auth transactions
-  arkNetworkConfigPath: "ark_network_config/localnet.yml"
+  arkNetworkConfigPath: "ark_network_config/mainnet.yml"
 
   # The address that fees are sent to
   serviceArkAddress: "ARNJJruY6RcuYCXcwWsu4bx9kyZtntqeAx"
