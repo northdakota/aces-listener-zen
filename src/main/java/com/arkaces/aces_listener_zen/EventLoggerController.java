@@ -1,7 +1,7 @@
 package com.arkaces.aces_listener_zen;
 
 import com.arkaces.aces_server.common.json.NiceObjectMapper;
-import com.arkaces.aces_server.aces_listener.event.Event;
+import com.arkaces.aces_server.aces_listener.event.EventPayload;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class EventLoggerController {
     private final NiceObjectMapper logObjectMapper;
 
     @PostMapping("/public/eventLogger")
-    public Event postEvent(@RequestBody Event event) {
+    public EventPayload postEvent(@RequestBody EventPayload event) {
         log.info(logObjectMapper.writeValueAsString(event));
         return event;
     }
